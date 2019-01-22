@@ -1,0 +1,60 @@
+.header-in{
+    background: url('../../assets/img/body-bg.jpg') no-repeat top left;
+    background-size: cover;
+    height: 100vh;
+
+}
+.logo{
+    color: #dcb34a;
+    position: relative;
+}
+.logo h1{
+    font-family: 'Kaushan Script', cursive;
+    font-size:90px;
+    text-shadow: 2px 2px 4px #000000;
+    margin-top:10%;
+}
+.logo small{
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    float:right;
+    color: #fff;
+    margin-right: 30px;
+}
+.mid-w{
+    height: 100vh;
+}
+
+.menu{
+    color: #56618e;
+    position: absolute;
+    top:150px;
+    left: -120px;
+    width: 300px;
+    border-top:1px dashed #56618e;
+    border-bottom:1px dashed #56618e;
+    padding: 25px;
+
+}
+.menu a{color: #dcb34a;padding: 0 15px;text-decoration: none}
+.menu a:hover{color:#a9afc7}
+.order{
+    color: #fff;
+    position: absolute;
+    top:250px;
+    left: -60px;
+    width: 180px;
+    padding: 10px 20px;
+    text-align: center;
+    background: #dc3545;
+    border-radius: 50px;
+    font-size: 20px;
+    box-shadow:0 0 0 0.2rem rgb(220, 65, 69, 0.3)
+
+
+}
+.order:hover{
+    text-decoration: none;     
+    background: #b72130;
+    box-shadow:0 0 0 0.2rem rgb(220, 65, 69, 0.3);}
+
+      

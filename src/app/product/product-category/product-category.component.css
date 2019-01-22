@@ -1,0 +1,18 @@
+.featured{
+    text-align: center;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #ccc;
+}
+.prod{
+    padding: 10px;
+    margin: 1% 1%;
+    float: left;
+    width: 23%;
+    box-shadow: 1px 1px 5px #d6d5d5;
+}
+.prod h3{
+    font-size:20px;
+    padding: 10px 0;
+    border-bottom: 1px dashed #ccc;
+}

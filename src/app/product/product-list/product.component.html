@@ -1,0 +1,21 @@
+<div class="container">
+    <h2 class="featured">Featured Products</h2>
+
+  <div class="row no-gutters">
+      <ng-container *ngFor="let prod of product">
+        
+        <div class="col-md-4" *ngFor="let p of prod">
+            <div class="over-i">
+
+          <img src="http://www.petukibiryani.com/pos/{{p.file}}" alt="" class="image">
+            <div class="middle">
+                    <h3>{{p.category_name}}</h3>
+                    <p><a class="btn btn-warning btn-sm" routerLink="/product/{{p.id}}">Order Now</a></p>
+                  </div>
+
+              </div>
+            
+        </div>
+      </ng-container>
+  </div>
+</div>

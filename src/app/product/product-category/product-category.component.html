@@ -1,0 +1,27 @@
+<div class="container">
+    <h2 class="featured">Products</h2>
+
+  <div class="row no-gutters">
+      <ng-container *ngFor="let prod of product ">
+        <ng-container *ngFor="let p of prod" >
+          <ng-container *ngIf="p.category_id === pid">
+              <div class=" prod">
+          <img src="http://www.petukibiryani.com/pos/{{p.file}}" alt="" style="width:100%">
+          <h3>{{p.sub_category_name}}</h3>
+          <p>{{p.description}}</p>
+
+           <ng-container *ngIf="getProductQuantity(p.id) === 0; else incdec" > 
+          <button class="btn btn-success btn-sm plus" (click)="addToCart(p)">Add to cart</button>
+            </ng-container>
+          </div>
+
+          <ng-template #incdec>
+          <button class="btn btn-success btn-sm plus" (click)="increaseProductQuantity(p)">+</button>
+          {{getProductQuantity(p.id) || 0}} Item in cart
+          <button class="btn btn-danger btn-sm minus" (click)="decreaseProductQuantity(p)">-</button>
+          </ng-template>
+      </ng-container>
+      </ng-container>
+      </ng-container>
+  </div>
+</div>

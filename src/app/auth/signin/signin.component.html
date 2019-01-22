@@ -1,0 +1,33 @@
+<div class="container">
+        <h2 class="featured">Sign in</h2>
+
+    <div class=" d-flex justify-content-center">
+        <div class="col-3 d-flex align-self-center">
+            <form (ngSubmit)="onSignin(f)" #f=ngForm>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" 
+                      ngModel 
+                      name="email"
+                      class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" 
+                      ngModel 
+                      name="password"
+                      class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-sm" [disabled]="!f.valid">Submit</button>
+                    <span style="float:right"><a routerLink=""><small> Forgot Password</small></a></span>
+                    <hr>
+                    <div style="width:100%">
+                        New User! Please signup 
+                        <a class="btn btn-warning btn-sm" routerLink="/auth/signup">Sign up</a></div>
+
+                  </form>
+                  </div>
+
+    </div>
+</div>

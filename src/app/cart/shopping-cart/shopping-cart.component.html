@@ -1,0 +1,44 @@
+<div class="container">
+    <h2 class="featured">Items in Cart</h2>
+
+  <div class="row">
+    <div class="col-md-12">
+          <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Product</th>
+                  <th scope="col">Quantity</th>
+                  <th scope="col">Price</th>
+                  <th scope="col">Total Price</th>
+
+                </tr>
+              </thead>
+              <tbody>
+                  <ng-container *ngFor="let cart of cartItem; let i = index">
+                <tr  *ngIf="getProductQuantity(cart.id) != 0">
+                  <td>{{cart.sub_category_name}}</td>
+                  <td>
+                      <button class="btn btn-success btn-sm plus" (click)="increaseProductQuantity(cart)">+</button>
+                      {{getProductQuantity(cart.id) }} Item in cart
+                      <button class="btn btn-danger btn-sm minus" (click)="decreaseProductQuantity(cart)">-</button>
+                     
+                  </td>
+                  <td><i class="fas fa-rupee-sign"></i> {{cart.base_price}}</td>
+                  <td><i class="fas fa-rupee-sign"></i> {{cart.base_price * getProductQuantity(cart.id)}}</td>
+
+                </tr>
+              </ng-container>
+              <tr>
+                  <td></td>
+                  <td></td>
+                  <td>Total Cart Price</td>
+                  <td><i class="fas fa-rupee-sign"></i> {{getTotalCartProductPrice()}}</td>
+
+                </tr>
+              </tbody>
+            </table>  
+            <a class="btn btn-primary btn-sm" routerLink="/product" >Shop More</a> &nbsp;
+            <button class="btn btn-primary btn-sm"(click)="productCheckout()">Checkout</button>
+    </div>
+  </div>
+</div>

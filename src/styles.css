@@ -1,1 +1,85 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou');
+
+body{
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+#foo {
+    width: 200px;
+    height: 200px;
+    background: #644e0d;
+    color: #fff;
+    animation: corner 3s;
+    border-radius: 20%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+  }
+  
+  #foo2 {
+    width: 50px;
+    height:50px;
+    background: #644e0d;
+    color: #fff;
+    animation: corner 3s;
+    border-radius: 20%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    border-bottom: 1px dashed #000000;
+
+  }
+  
+  @keyframes corner {
+    0% {
+      border-top-left-radius: 1% 50%;
+    }
+    12.5% {
+      border-top-left-radius: 50%;
+      border-top-right-radius: 50%;
+    }
+    25% {
+      border-top-right-radius: 1% 50%;
+    }
+    25.001% {
+      border-top-right-radius: 50% 1%;
+    }
+    37.5% {
+      border-top-right-radius: 50%;
+      border-bottom-right-radius: 50%;
+    }
+    50% {
+      border-bottom-right-radius: 50% 1%;
+    }
+    50.001% {
+      border-bottom-right-radius: 1% 50%;
+    }
+    62.5% {
+      border-bottom-right-radius: 50%;
+      border-bottom-left-radius: 50%;
+    }
+    75% {
+      border-bottom-left-radius: 1% 50%;
+    }
+    75.001% {
+      border-bottom-left-radius: 50% 1%;
+    }
+    87.5% {
+      border-bottom-left-radius: 50%;
+      border-top-left-radius: 50%;
+    }
+    100% {
+      border-top-left-radius: 50% 1%;
+    }
+  }

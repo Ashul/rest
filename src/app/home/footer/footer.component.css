@@ -1,0 +1,26 @@
+footer{
+    position: relative;
+    background: #13161b;
+    margin-top: 35px;
+    padding:30px;
+    color: #ccc;
+}
+footer h4{    
+    font-size:15px;
+}
+.list-group li{
+    border:0;
+    background: transparent;
+    padding: 5px 0;
+}
+.logo{
+    color: #dcb34a;
+    position: relative;
+    width: 200px;
+    margin-top: 60px;
+    font-family: 'Kaushan Script', cursive;
+    text-shadow: 2px 2px 4px #000000;
+}
+footer a{
+    color: #ccc;
+}

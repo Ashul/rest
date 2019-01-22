@@ -1,0 +1,30 @@
+nav{width:100%;}
+.logo{
+    color: #dcb34a;
+    position: relative;
+    width: 200px;
+    margin-top: 60px;
+    font-family: 'Kaushan Script', cursive;
+    text-shadow: 2px 2px 4px #000000;
+}
+.logo a{color: #fff;}
+header{
+    position: relative;
+    height: 150px; 
+    background: url('../../../assets/img/body-bg.jpg') no-repeat bottom right;
+    background-size: cover;
+}
+.navbar-brand h1{
+    margin-left: 12px;
+    margin-top:10px;
+    font-family: 'Kaushan Script', cursive;
+    text-shadow: 1px 1px 1px #000000;
+    font-size: 25px;}
+
+.navbar-brand h1 a{    color: #efefef;}
+.navbar-brand h1 a:hover{    text-decoration: none;}
+.nav-link{font-size:15px;color: #fff !important;}
+.in-nav{
+    padding: 25px;
+
+}

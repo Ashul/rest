@@ -1,0 +1,6 @@
+.not-found{
+    width:100%;
+    background: url('../../assets/img/Error.png') no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
