@@ -27,22 +27,8 @@ export class ProductCategoryComponent implements OnInit {
       }) // end subscribe
       }) // route end
     
-    // this.getProductByCategory();
   }
 
-//Get All ProductBy Category
-  // getProductByCategory() {
-  //   this.productService.getProductByCategory(this.id)
-  //   .subscribe(
-  //     (data:any) => {
-  //       console.log(data)
-  //       this.product.push(data.data);
-  //     console.log(data);
-  //      }
-  //   );
-
-  // }
-  
 //Get Total Quantity
 getTotalPQuantity(){
   return this.productService.getTotalQuantity()
